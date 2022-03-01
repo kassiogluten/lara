@@ -1,27 +1,31 @@
-import { extendTheme } from "@chakra-ui/react";
+import { calc, extendTheme } from "@chakra-ui/react";
 
 export const theme = extendTheme({
   initialColorMode: "dark",
   useSystemColorMode: false,
   fonts: {
-    heading: "Roboto",
-    body: "Roboto",
+    heading: "Montserrat",
+    body: "Montserrat",
     // heading: "CaviarDreams",
     // body: "CaviarDreams",
   },
+
   colors: {
-    rosaxoq: "#ff00ff",
+    azul: "#74bfcb",
+    verde: "#228191",
+    verdeClaro: "#a5dce5",
   },
+
   components: {
     Button: {
       baseStyle: {
         _hover: {
           // textDecoration: "underline",
         },
-        
       },
     },
   },
+
   styles: {
     global: {
       // svg: {
@@ -34,13 +38,14 @@ export const theme = extendTheme({
         },
       },
       body: {
-        /* bg: "var(--white)",
-        color: "var(--white)",
-        lineHeight: "inherit", */
+        bg: "url(/bg.jpg), #184259",
+        bgSize: "cover",
+        backgroundAttachment: { base: "fixed", md: "inherit" },
+        color: "white",
       },
-      button:{
+      button: {
         _focus: { outlineColor: "#00000011" },
-      }
+      },
     },
   },
 });

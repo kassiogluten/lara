@@ -8,7 +8,6 @@ import {
   Badge,
 } from "@chakra-ui/react";
 import Head from "next/head";
-import { Header } from "../components/Header";
 import { useRouter } from "next/router";
 
 export default function Custom404() {
@@ -18,7 +17,6 @@ export default function Custom404() {
       <Head>
         <title>ERRO 404</title>
       </Head>
-      <Header />
       <Box align="center" w="100%" >
         <Flex
           p="5rem 1rem"
