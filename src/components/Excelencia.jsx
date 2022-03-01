@@ -21,6 +21,8 @@ import {
 import { EmailIcon, PhoneIcon } from "@chakra-ui/icons";
 
 import { FiSmartphone, FiStar, FiUser } from "react-icons/fi";
+import { Botao } from "./Hero";
+import { motion } from "framer-motion";
 
 export function Excelencia() {
   return (
@@ -65,6 +67,20 @@ export function Excelencia() {
           <Item img="/unha6.png" title="Nivelamento" />
           <Item img="/unha7.png" title="Resistência" />
         </Wrap>
+        <Botao
+          animate={{ scale: 0.9 }}
+          transition={{
+            duration: 0.6,
+            repeat: Infinity,
+            repeatType:'reverse',
+            ease:"easeInOut",
+            // repeatDelay: 0.5,
+          }}
+          mt={50}
+          maxW={600}
+        >
+          <b>EU QUERO PARTICIPAR</b>
+        </Botao>
       </Flex>
     </Flex>
   );

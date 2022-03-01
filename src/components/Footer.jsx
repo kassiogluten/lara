@@ -22,6 +22,7 @@ import {
 import { EmailIcon, PhoneIcon } from "@chakra-ui/icons";
 
 import { FiSmartphone, FiStar, FiUser } from "react-icons/fi";
+import { Botao } from "./Hero";
 
 export function Footer() {
   return (
@@ -36,10 +37,10 @@ export function Footer() {
         pt={20}
         align="center"
         w="full"
-        flexDir={{ base: "column-reverse", md: "row" }}
+        flexDir={{ base: "column-reverse", lg: "row" }}
       >
-        <Image flex={1} w={{ md: "40%" }} src="/lara-rodape.png" alt="Lara" />
-        <VStack maxW={600} mt={10} p={8} flex={1} align="start">
+        <Image flex={1} w={{ lg: "40%" }} src="/lara-rodape.png" alt="Lara" />
+        <VStack maxW={600} mt={10} p={{base:4, md:8}} flex={1} align="start">
           <Text fontSize={{ base: 16, md: 22 }}>Quem é</Text>
           <Heading fontSize={{ base: 40, md: 60 }} fontWeight={900}>
             Lara Machado ?
@@ -62,18 +63,7 @@ export function Footer() {
             (patente requerida no INPI) que revolucionou o mercado de
             alongamentos de fibra.{" "}
           </Text>
-          <Button
-            variant="ghost"
-            w="full"
-            fontWeight={800}
-            fontSize={{ base: 20, sm: 28, xl: 32 }}
-            borderRadius="full"
-            h={{ base: 86, xl: 120 }}
-            bgGradient="linear(to-t, verde 20%, verdeClaro 150%)"
-            _hover={{ bgGradient: "linear(to-b, verde, verdeClaro 150%)" }}
-          >
-            EU QUERO PARTICIPAR
-          </Button>
+          <Botao mt={50} maxW={600}><b>EU QUERO PARTICIPAR</b></Botao>
         </VStack>
       </Flex>
 
