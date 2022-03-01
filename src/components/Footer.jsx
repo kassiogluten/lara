@@ -40,7 +40,13 @@ export function Footer() {
         flexDir={{ base: "column-reverse", lg: "row" }}
       >
         <Image flex={1} w={{ lg: "40%" }} src="/lara-rodape.png" alt="Lara" />
-        <VStack maxW={600} mt={10} p={{base:4, md:8}} flex={1} align="start">
+        <VStack
+          maxW={600}
+          mt={10}
+          p={{ base: 4, md: 8 }}
+          flex={1}
+          align="start"
+        >
           <Text fontSize={{ base: 16, md: 22 }}>Quem é</Text>
           <Heading fontSize={{ base: 40, md: 60 }} fontWeight={900}>
             Lara Machado ?
@@ -63,12 +69,29 @@ export function Footer() {
             (patente requerida no INPI) que revolucionou o mercado de
             alongamentos de fibra.{" "}
           </Text>
-          <Botao mt={50} maxW={600}><b>EU QUERO PARTICIPAR</b></Botao>
+          <Botao mt={50} maxW={600}>
+            <b>EU QUERO PARTICIPAR</b>
+          </Botao>
         </VStack>
       </Flex>
 
-      <Flex flexDir="column" textAlign="center" bg="#74c0cc" py={8} align="center" w="full">
-        <Text w="full">Feito com ❤️ por Suricato Agência</Text>
+      <Flex
+        flexDir="column"
+        textAlign="center"
+        bg="#74c0cc"
+        py={8}
+        align="center"
+        w="full"
+      >
+        <Text
+          _hover={{ textDecoration: "underline" }}
+          as="a"
+          href="https://suricatoagencia.com.br"
+          target="_blank"
+          w="full"
+        >
+          Feito com ❤️ por Suricato Agência
+        </Text>
         <Text w="full">© Todos os Direitos Reservados</Text>
       </Flex>
     </Flex>
