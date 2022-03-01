@@ -30,6 +30,7 @@ export function Excelencia() {
       justify="center"
       align="center"
       w="100%"
+      overflow="hidden"
     >
       <Flex
         py={20}
@@ -39,16 +40,25 @@ export function Excelencia() {
         justify="center"
         flexDir="column"
       >
-        <Text sx={{ b: { fontWeight: 700 } }} fontSize={{ base: 36, xl: 46 }}>
+        <Text
+          sx={{ b: { fontWeight: 700 } }}
+          fontSize={{ base: 26, md: 30, "2xl": 36 }}
+        >
           O seu <b>padrão de naturalidade</b> vai <b>mudar completamente!</b>
         </Text>
-        <Text sx={{ b: { fontWeight: 700 } }} fontSize={{ base: 36, xl: 46 }}>
+        <Text
+          sx={{ b: { fontWeight: 700 } }}
+          fontSize={{ base: 26, md: 30, "2xl": 36 }}
+        >
           Você vai entender os{" "}
           <b>7 pontos do Padrão de Excelência Lara Machado:</b>
         </Text>
         <Wrap pt={10} justify="center" align="start" w="full">
           <Item img="/unha1.png" title="Paredes laterais retas e simétricas" />
-          <Item img="/unha2.png" title="Ponto de tensão natural e sem caimento de ponta" />
+          <Item
+            img="/unha2.png"
+            title="Ponto de tensão natural e sem caimento de ponta"
+          />
           <Item img="/unha3.png" title="Curvatura Estrutal" />
           <Item img="/unha4.png" title="Espessura" />
           <Item img="/unha5.png" title="Coloração" />
@@ -63,8 +73,6 @@ export function Excelencia() {
 const Item = ({ img, title }) => (
   <VStack p={4} minW={300} w="24vw">
     <Image alt="Icone" src={img} />
-    <Heading fontSize={{ base: 24, md: 26, '2xl':30 }} >
-      {title}
-    </Heading>
+    <Heading fontSize={{ base: 22, md: 24, "2xl": 30 }}>{title}</Heading>
   </VStack>
 );

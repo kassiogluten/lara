@@ -38,7 +38,7 @@ export function Footer() {
         w="full"
         flexDir={{ base: "column-reverse", md: "row" }}
       >
-        <Image w={{ md: "50%" }} src="/lara-rodape.png" alt="Lara" />
+        <Image flex={1} w={{ md: "40%" }} src="/lara-rodape.png" alt="Lara" />
         <VStack maxW={600} mt={10} p={8} flex={1} align="start">
           <Text fontSize={{ base: 16, md: 22 }}>Quem é</Text>
           <Heading fontSize={{ base: 40, md: 60 }} fontWeight={900}>
@@ -66,7 +66,7 @@ export function Footer() {
             variant="ghost"
             w="full"
             fontWeight={800}
-            fontSize={{ base: 26, md: 30, xl: 36 }}
+            fontSize={{ base: 20, sm: 28, xl: 32 }}
             borderRadius="full"
             h={{ base: 86, xl: 120 }}
             bgGradient="linear(to-t, verde 20%, verdeClaro 150%)"

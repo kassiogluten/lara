@@ -62,10 +62,12 @@ export function Hero() {
             Aprenda a técnica de alongamento *NATURALIDADE* para conquistar
             clientes e se tornar uma Nail Designer valorizada.
           </Heading>
+          
           <Heading
+            blendMode="hard-light"
             w="full"
             p={2}
-            borderColor="#a5dce544"
+            borderColor="#74bfcb77"
             borderWidth={1}
             letterSpacing={-1}
             fontWeight={700}
@@ -84,6 +86,7 @@ export function Hero() {
               />
               <Input
                 _hover={{ bg: "azul" }}
+                transitionProperty="none"
                 borderWidth={0}
                 pl={20}
                 _focus={{ bg: "verde" }}
@@ -91,7 +94,6 @@ export function Hero() {
                 color="white"
                 bgGradient="linear(to-r,verdeClaro, #53a5bc)"
                 variant="filled"
-                type="tel"
                 placeholder="Seu nome"
               />
             </InputGroup>
@@ -104,6 +106,7 @@ export function Hero() {
               />
               <Input
                 _hover={{ bg: "azul" }}
+                transitionProperty="none"
                 borderWidth={0}
                 pl={20}
                 _focus={{ bg: "verde" }}
@@ -111,7 +114,6 @@ export function Hero() {
                 color="white"
                 bgGradient="linear(to-r,verdeClaro, #53a5bc)"
                 variant="filled"
-                type="tel"
                 placeholder="Seu melhor telefone"
               />
             </InputGroup>
@@ -124,6 +126,7 @@ export function Hero() {
               />
               <Input
                 _hover={{ bg: "azul" }}
+                transitionProperty="none"
                 borderWidth={0}
                 pl={20}
                 _focus={{ bg: "verde" }}
@@ -131,7 +134,6 @@ export function Hero() {
                 color="white"
                 bgGradient="linear(to-r,verdeClaro, #53a5bc)"
                 variant="filled"
-                type="tel"
                 placeholder="Seu melhor e-mail"
               />
             </InputGroup>

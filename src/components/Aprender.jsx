@@ -24,7 +24,7 @@ import { FiSmartphone, FiStar, FiUser } from "react-icons/fi";
 
 export function Aprender() {
   return (
-    <Flex as="section" justify="center" align="center" w="100%">
+    <Flex overflow="hidden" as="section" justify="center" align="center" w="100%">
       <Flex
         py={20}
         textAlign="center"
@@ -33,7 +33,7 @@ export function Aprender() {
         justify="center"
         flexDir="column"
       >
-        <Heading fontSize={{ base: 40, xl: 53 }}>
+        <Heading fontSize={{ base: 30, xl: 53 }}>
           Nessa jornada online, você vai aprender:
         </Heading>
         <Wrap pt={10} justify="center" align="start" w="full">
@@ -59,7 +59,7 @@ export function Aprender() {
 }
 
 const Item = ({ img, children }) => (
-  <VStack p={4} minW={300} w="24vw">
+  <VStack minW={300} w="24vw">
     <Image h={200} alt="Icone" src={img} />
     <Text
       fontSize={{ base: 24, md: 26, '2xl':30 }}
