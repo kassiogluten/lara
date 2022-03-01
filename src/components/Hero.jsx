@@ -21,6 +21,7 @@ import {
 import { EmailIcon, PhoneIcon } from "@chakra-ui/icons";
 
 import { FiSmartphone, FiStar, FiUser } from "react-icons/fi";
+import { motion } from "framer-motion";
 
 export function Hero() {
   return (
@@ -45,24 +46,24 @@ export function Hero() {
         />
         <VStack
           px={4}
-          pt="10vw"
+          pt="5vw"
           pb={100}
           flex={1}
           textAlign="center"
           align="center"
           justify="center"
           maxW={670}
-          spacing={10}
+          spacing={{ base: 10, md: 5, "2xl": 10 }}
         >
           <Heading
             letterSpacing={-2}
-            fontWeight={800}
-            fontSize={{ base: 28, md: 36, xl: 50 }}
+            fontWeight={600}
+            fontSize={{ base: 24, md: 26, xl: 36, "2xl": 50 }}
           >
-            Aprenda a técnica de alongamento *NATURALIDADE* para conquistar
-            clientes e se tornar uma Nail Designer valorizada.
+            Aprenda a técnica de alongamento <b>*NATURALIDADE*</b> para
+            conquistar clientes e se tornar uma Nail Designer valorizada.
           </Heading>
-          
+
           <Heading
             blendMode="hard-light"
             w="full"
@@ -71,7 +72,7 @@ export function Hero() {
             borderWidth={1}
             letterSpacing={-1}
             fontWeight={700}
-            fontSize={{ base: 20, md: 22, xl: 25 }}
+            fontSize={{ base: 20, md: 22, xl: 24 }}
           >
             21 a 24 de Março, ao vivo, online e gratuito.
           </Heading>
@@ -138,36 +139,47 @@ export function Hero() {
               />
             </InputGroup>
           </VStack>
-          <Button
-            w="full"
-            variant="ghost"
-            px={4}
+          <Botao
             leftIcon={
               <Icon as={FiStar} boxSize={{ base: 51, lg: 71, xl: 81 }} />
             }
-            shadow="0 0 30px 10px #c959da"
-            _hover={{ shadow: "0 0 30px 10px #331484" }}
-            borderRadius="full"
-            maxW="full"
-            h={{ base: 100, lg: 120, xl: 135 }}
-            bgGradient="linear(to-r,#c959da,#331484)"
           >
-            <Heading
-              pl={4}
-              fontSize={{ base: 14, lg: 20, xl: 24 }}
-              sx={{
-                b: {
-                  fontWeight: 900,
-                  fontSize: { base: 24, lg: 36, xl: 40 },
-                },
-              }}
-            >
-              QUERO ATINGIR O PADRÃO
-              <br /> <b>NATURALIDADE</b>
-            </Heading>
-          </Button>
+            QUERO ATINGIR O PADRÃO
+            <br /> <b>NATURALIDADE</b>
+          </Botao>
         </VStack>
       </Flex>
     </Flex>
   );
 }
+
+export const Botao = (props) => {
+  const MotionButton = motion(Button);
+  return (
+    <MotionButton
+      w="full"
+      variant="ghost"
+      px={4}
+      shadow="0 0 30px 10px #c959da"
+      _hover={{ shadow: "0 0 30px 10px #331484" }}
+      borderRadius="full"
+      maxW="full"
+      h={{ base: 81, lg: 110, "2xl": 125 }}
+      bgGradient="linear(to-r,#c959da,#331484)"
+      {...props}
+    >
+      <Heading
+        pl={4}
+        fontSize={{ base: 14, lg: 20, xl: 24 }}
+        sx={{
+          b: {
+            fontWeight: 900,
+            fontSize: { base: 22, lg: 36, xl: 40 },
+          },
+        }}
+      >
+        {props.children}
+      </Heading>
+    </MotionButton>
+  );
+};
