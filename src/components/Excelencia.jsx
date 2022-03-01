@@ -71,7 +71,7 @@ export function Excelencia() {
 }
 
 const Item = ({ img, title }) => (
-  <VStack p={4} minW={300} w="24vw">
+  <VStack py={8} px={4} minW={300} w="24vw">
     <Image alt="Icone" src={img} />
     <Heading fontSize={{ base: 22, md: 24, "2xl": 30 }}>{title}</Heading>
   </VStack>

@@ -59,7 +59,7 @@ export function Aprender() {
 }
 
 const Item = ({ img, children }) => (
-  <VStack minW={300} w="24vw">
+  <VStack  py={8} px={4} minW={300} w="24vw">
     <Image h={200} alt="Icone" src={img} />
     <Text
       fontSize={{ base: 24, md: 26, '2xl':30 }}
