@@ -25,7 +25,13 @@ import { FiSmartphone, FiStar, FiUser } from "react-icons/fi";
 
 export function Footer() {
   return (
-    <Flex as="section" justify="center" align="center" w="100%">
+    <Flex
+      flexDir="column"
+      as="section"
+      justify="center"
+      align="center"
+      w="100%"
+    >
       <Flex
         pt={20}
         align="center"
@@ -56,19 +62,24 @@ export function Footer() {
             (patente requerida no INPI) que revolucionou o mercado de
             alongamentos de fibra.{" "}
           </Text>
-          <Button variant="ghost"
+          <Button
+            variant="ghost"
             w="full"
             fontWeight={800}
-            fontSize={{base:26, md:30, xl:36}}
+            fontSize={{ base: 26, md: 30, xl: 36 }}
             borderRadius="full"
             h={{ base: 86, xl: 120 }}
             bgGradient="linear(to-t, verde 20%, verdeClaro 150%)"
-            _hover={{bgGradient:"linear(to-b, verde, verdeClaro 150%)"}}
-
+            _hover={{ bgGradient: "linear(to-b, verde, verdeClaro 150%)" }}
           >
             EU QUERO PARTICIPAR
           </Button>
         </VStack>
+      </Flex>
+
+      <Flex flexDir="column" textAlign="center" bg="#74c0cc" py={8} align="center" w="full">
+        <Text w="full">Feito com ❤️ por Suricato Agência</Text>
+        <Text w="full">© Todos os Direitos Reservados</Text>
       </Flex>
     </Flex>
   );
