@@ -41,7 +41,7 @@ export function Hero() {
           textAlign="center"
           align="center"
           justify="center"
-          minH={{base:"90vw", md:"70vw"}}
+          minH={{ base: "90vw", md: "70vw" }}
         />
         <VStack
           px={4}
@@ -83,6 +83,7 @@ export function Hero() {
                 children={<Icon as={FiUser} color="white" boxSize={30} />}
               />
               <Input
+                _hover={{ bg: "azul" }}
                 borderWidth={0}
                 pl={20}
                 _focus={{ bg: "verde" }}
@@ -102,6 +103,7 @@ export function Hero() {
                 children={<Icon as={FiSmartphone} color="white" boxSize={30} />}
               />
               <Input
+                _hover={{ bg: "azul" }}
                 borderWidth={0}
                 pl={20}
                 _focus={{ bg: "verde" }}
@@ -121,6 +123,7 @@ export function Hero() {
                 children={<EmailIcon color="white" boxSize={30} />}
               />
               <Input
+                _hover={{ bg: "azul" }}
                 borderWidth={0}
                 pl={20}
                 _focus={{ bg: "verde" }}
