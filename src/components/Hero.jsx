@@ -20,7 +20,13 @@ import {
 } from "@chakra-ui/react";
 import { EmailIcon, PhoneIcon } from "@chakra-ui/icons";
 
-import { FiSmartphone, FiStar, FiUser } from "react-icons/fi";
+import {
+  FiPhone,
+  FiPhoneCall,
+  FiSmartphone,
+  FiStar,
+  FiUser,
+} from "react-icons/fi";
 import { motion } from "framer-motion";
 
 export function Hero() {
@@ -77,76 +83,147 @@ export function Hero() {
             21 a 24 de Março, ao vivo, online e gratuito.
           </Heading>
 
-          <VStack spacing={4} w="full">
-            <InputGroup size="lg" borderRadius="full" overflow="hidden">
-              <InputLeftElement
-                bg="verde"
-                pointerEvents="none"
-                px={8}
-                children={<Icon as={FiUser} color="white" boxSize={30} />}
-              />
-              <Input
-                _hover={{ bg: "azul" }}
-                transitionProperty="none"
-                borderWidth={0}
-                pl={20}
-                _focus={{ bg: "verde" }}
-                _placeholder={{ color: "white" }}
-                color="white"
-                bgGradient="linear(to-r,verdeClaro, #53a5bc)"
-                variant="filled"
-                placeholder="Seu nome"
-              />
-            </InputGroup>
-            <InputGroup size="lg" borderRadius="full" overflow="hidden">
-              <InputLeftElement
-                bg="verde"
-                pointerEvents="none"
-                px={8}
-                children={<Icon as={FiSmartphone} color="white" boxSize={30} />}
-              />
-              <Input
-                _hover={{ bg: "azul" }}
-                transitionProperty="none"
-                borderWidth={0}
-                pl={20}
-                _focus={{ bg: "verde" }}
-                _placeholder={{ color: "white" }}
-                color="white"
-                bgGradient="linear(to-r,verdeClaro, #53a5bc)"
-                variant="filled"
-                placeholder="Seu melhor telefone"
-              />
-            </InputGroup>
-            <InputGroup size="lg" borderRadius="full" overflow="hidden">
-              <InputLeftElement
-                bg="verde"
-                pointerEvents="none"
-                px={8}
-                children={<EmailIcon color="white" boxSize={30} />}
-              />
-              <Input
-                _hover={{ bg: "azul" }}
-                transitionProperty="none"
-                borderWidth={0}
-                pl={20}
-                _focus={{ bg: "verde" }}
-                _placeholder={{ color: "white" }}
-                color="white"
-                bgGradient="linear(to-r,verdeClaro, #53a5bc)"
-                variant="filled"
-                placeholder="Seu melhor e-mail"
-              />
-            </InputGroup>
-          </VStack>
-          <Botao
-            leftIcon={
-              <Icon as={FiStar} boxSize={{ base: 51, lg: 71, xl: 81 }} />
-            }
+          <form
+            action="https://app.mailingboss.com/lists/6203adf71c88e/subscribe"
+            method="post"
           >
-            QUERO ATINGIR O PADRÃO
-            <br /> <b>NATURALIDADE</b>
-          </Botao>
+            <VStack pb={8} spacing={4} w="full">
+              {/* <input
+                required
+                placeholder="Nome"
+               
+              />
+
+              <input
+                required
+                placeholder="Seu Melhor E-mail"
+                name="EMAIL"
+                type="email"
+                id="EMAIL"
+              />
+
+              <input
+                required
+                placeholder="Telefone"
+               
+              />
+
+              <input
+                required
+                placeholder="DDD"
+                name="DDD"
+                type="text"
+                id="DDD"
+              /> */}
+
+              {/* <input type="submit" value="Subscribe" /> */}
+              <InputGroup size="lg" borderRadius="full" overflow="hidden">
+                <InputLeftElement
+                  bg="verde"
+                  pointerEvents="none"
+                  px={8}
+                  children={<Icon as={FiUser} color="white" boxSize={30} />}
+                />
+                <Input
+                  _hover={{ bg: "azul" }}
+                  transitionProperty="none"
+                  borderWidth={0}
+                  pl={20}
+                  _focus={{ bg: "verde" }}
+                  _placeholder={{ color: "white" }}
+                  color="white"
+                  bgGradient="linear(to-r,verdeClaro, #53a5bc)"
+                  variant="filled"
+                  placeholder="Seu nome"
+                  name="FNAME"
+                  type="text"
+                  id="FNAME"
+                />
+              </InputGroup>
+              <InputGroup size="lg" borderRadius="full" overflow="hidden">
+                <InputLeftElement
+                  bg="verde"
+                  pointerEvents="none"
+                  px={8}
+                  children={
+                    <Icon as={FiSmartphone} color="white" boxSize={30} />
+                  }
+                />
+                <Input
+                  _hover={{ bg: "azul" }}
+                  transitionProperty="none"
+                  borderWidth={0}
+                  pl={20}
+                  _focus={{ bg: "verde" }}
+                  _placeholder={{ color: "white" }}
+                  color="white"
+                  bgGradient="linear(to-r,verdeClaro, #53a5bc)"
+                  variant="filled"
+                  placeholder="Seu melhor telefone"
+                  name="PHONE"
+                  type="text"
+                  id="PHONE"
+                />
+              </InputGroup>
+              <InputGroup size="lg" borderRadius="full" overflow="hidden">
+                <InputLeftElement
+                  bg="verde"
+                  pointerEvents="none"
+                  px={8}
+                  children={
+                    <Icon as={FiPhoneCall} color="white" boxSize={30} />
+                  }
+                />
+                <Input
+                  _hover={{ bg: "azul" }}
+                  transitionProperty="none"
+                  borderWidth={0}
+                  pl={20}
+                  _focus={{ bg: "verde" }}
+                  _placeholder={{ color: "white" }}
+                  color="white"
+                  bgGradient="linear(to-r,verdeClaro, #53a5bc)"
+                  variant="filled"
+                  placeholder="DDD"
+                  name="DDD"
+                  type="text"
+                  id="DDD"
+                />
+              </InputGroup>
+              <InputGroup size="lg" borderRadius="full" overflow="hidden">
+                <InputLeftElement
+                  bg="verde"
+                  pointerEvents="none"
+                  px={8}
+                  children={<EmailIcon color="white" boxSize={30} />}
+                />
+                <Input
+                  _hover={{ bg: "azul" }}
+                  transitionProperty="none"
+                  borderWidth={0}
+                  pl={20}
+                  _focus={{ bg: "verde" }}
+                  _placeholder={{ color: "white" }}
+                  color="white"
+                  bgGradient="linear(to-r,verdeClaro, #53a5bc)"
+                  variant="filled"
+                  placeholder="Seu melhor e-mail"
+                  name="EMAIL"
+                  type="email"
+                  id="EMAIL"
+                />
+              </InputGroup>
+            </VStack>
+            <Botao
+              type="submit"
+              leftIcon={
+                <Icon as={FiStar} boxSize={{ base: 51, lg: 71, xl: 81 }} />
+              }
+            >
+              QUERO ATINGIR O PADRÃO
+              <br /> <b>NATURALIDADE</b>
+            </Botao>
+          </form>
         </VStack>
       </Flex>
     </Flex>

@@ -83,7 +83,7 @@ export function Footer() {
         align="center"
         w="full"
       >
-        <Text
+        {/* <Text
           _hover={{ textDecoration: "underline" }}
           as="a"
           href="https://suricatoagencia.com.br"
@@ -91,7 +91,7 @@ export function Footer() {
           w="full"
         >
           Feito com ❤️ por Suricato Agência
-        </Text>
+        </Text> */}
         <Text w="full">© Todos os Direitos Reservados</Text>
       </Flex>
     </Flex>
