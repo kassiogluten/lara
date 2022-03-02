@@ -39,7 +39,7 @@ export function Footer() {
         w="full"
         flexDir={{ base: "column-reverse", lg: "row" }}
       >
-        <Image flex={1} w={{ lg: "40%" }} src="/lara-rodape.png" alt="Lara" />
+        <Image objectFit="revert" flex={1} w={{ lg: "40%" }} src="/lara-rodape.png" alt="Lara" />
         <VStack
           maxW={600}
           mt={10}
