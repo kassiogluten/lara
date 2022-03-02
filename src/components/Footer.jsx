@@ -39,7 +39,13 @@ export function Footer() {
         w="full"
         flexDir={{ base: "column-reverse", lg: "row" }}
       >
-        <Image objectFit="contain" flex={{md:1}} w={{ lg: "40%" }} src="/lara-rodape.png" alt="Lara" />
+        <Image
+          objectFit="contain"
+          flex={{ md: 1 }}
+          w={{ lg: "40%" }}
+          src="/lara-rodape.png"
+          alt="Lara"
+        />
         <VStack
           maxW={600}
           mt={10}
@@ -69,7 +75,7 @@ export function Footer() {
             (patente requerida no INPI) que revolucionou o mercado de
             alongamentos de fibra.{" "}
           </Text>
-          <Botao mt={50} maxW={600}>
+          <Botao onClick={() => window.scrollTo(0, 0)} mt={50} maxW={600}>
             <b>EU QUERO PARTICIPAR</b>
           </Botao>
         </VStack>

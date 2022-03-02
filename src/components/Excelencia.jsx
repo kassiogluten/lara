@@ -67,7 +67,7 @@ export function Excelencia() {
           <Item img="/unha6.png" title="Nivelamento" />
           <Item img="/unha7.png" title="Resistência" />
         </Wrap>
-        <Botao
+        <Botao onClick={() => window.scrollTo(0, 0)} 
           animate={{ scale: 0.9 }}
           transition={{
             duration: 0.6,
