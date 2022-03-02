@@ -1,5 +1,5 @@
 /* eslint-disable react/no-children-prop */
-import React from "react";
+import React, { useState } from "react";
 import {
   Box,
   Flex,
@@ -30,6 +30,7 @@ import {
 import { motion } from "framer-motion";
 
 export function Hero() {
+  const [loading, setLoading] = useState(false);
   return (
     <Flex as="section" justify="center" align="center" w="100%">
       <Flex
@@ -86,6 +87,7 @@ export function Hero() {
           <form
             action="https://app.mailingboss.com/lists/6203adf71c88e/subscribe"
             method="post"
+            onSubmit={() => setLoading(true)}
           >
             <VStack pb={8} spacing={4} w="full">
               {/* <input
@@ -219,6 +221,8 @@ export function Hero() {
               leftIcon={
                 <Icon as={FiStar} boxSize={{ base: 51, lg: 71, xl: 81 }} />
               }
+              isLoading={loading}
+              loadingText="Carregando"
             >
               QUERO ATINGIR O PADRÃO
               <br /> <b>NATURALIDADE</b>
