@@ -126,7 +126,7 @@ export function Hero() {
                   px={8}
                   children={<Icon as={FiUser} color="white" boxSize={30} />}
                 />
-                <Input
+                <Input required
                   _hover={{ bg: "azul" }}
                   transitionProperty="none"
                   borderWidth={0}
@@ -151,7 +151,7 @@ export function Hero() {
                     <Icon as={FiSmartphone} color="white" boxSize={30} />
                   }
                 />
-                <Input
+                <Input required
                   _hover={{ bg: "azul" }}
                   transitionProperty="none"
                   borderWidth={0}
@@ -176,7 +176,7 @@ export function Hero() {
                     <Icon as={FiPhoneCall} color="white" boxSize={30} />
                   }
                 />
-                <Input
+                <Input required
                   _hover={{ bg: "azul" }}
                   transitionProperty="none"
                   borderWidth={0}
@@ -199,7 +199,7 @@ export function Hero() {
                   px={8}
                   children={<EmailIcon color="white" boxSize={30} />}
                 />
-                <Input
+                <Input required
                   _hover={{ bg: "azul" }}
                   transitionProperty="none"
                   borderWidth={0}
