@@ -40,7 +40,7 @@ export const theme = extendTheme({
       body: {
         bg: "url(/bg.jpg), #184259",
         bgSize: "cover",
-        backgroundAttachment: { base: "fixed", md: "inherit" },
+        // backgroundAttachment: { base: "fixed", md: "inherit" },
         color: "white",
       },
       button: {

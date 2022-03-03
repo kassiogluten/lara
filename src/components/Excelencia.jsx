@@ -61,7 +61,7 @@ export function Excelencia() {
             img="/unha2.png"
             title="Ponto de tensão natural e sem caimento de ponta"
           />
-          <Item img="/unha3.png" title="Curvatura Estrutal" />
+          <Item img="/unha3.png" title="Curvatura Estrutural" />
           <Item img="/unha4.png" title="Espessura" />
           <Item img="/unha5.png" title="Coloração" />
           <Item img="/unha6.png" title="Nivelamento" />
