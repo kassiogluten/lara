@@ -40,7 +40,7 @@ export function Hero() {
         flexDir={{ base: "column", md: "row" }}
         bgImage="/lara.png"
         bgRepeat="no-repeat"
-        bgSize={{ base: "150%", md: "100%", "2xl": "cover" }}
+        bgSize={{ base: "170%", md: "100%", "2xl": "cover" }}
         overflow="hidden"
         //flexDir="column"
       >
