@@ -38,11 +38,13 @@ export function Footer() {
         align="center"
         w="full"
         flexDir={{ base: "column-reverse", lg: "row" }}
+        justify="center"
       >
         <Image
           objectFit="contain"
           flex={{ md: 1 }}
           w={{ lg: "40%" }}
+          maxW={{ md: 700 }}
           src="/lara-rodape.png"
           alt="Lara"
         />

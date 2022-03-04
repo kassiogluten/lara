@@ -38,7 +38,7 @@ export function Hero() {
         w="full"
         justify="space-between"
         flexDir={{ base: "column", md: "row" }}
-        bgImage="/lara.png"
+        bgImage="/lara4.png"
         bgRepeat="no-repeat"
         bgSize={{ base: "150%", md: "100%", "2xl": "cover" }}
         overflow="hidden"
