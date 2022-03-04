@@ -28,6 +28,10 @@ export function Excelencia() {
   return (
     <Flex
       bg="whiteAlpha.50"
+      bgImage="/bg.jpg"
+      bgAttachment="fixed"
+      bgPos="center bottom"
+      bgSize={{base:"140%", md:'cover'}}
       as="section"
       justify="center"
       align="center"
