@@ -71,20 +71,22 @@ export function Excelencia() {
           <Item img="/unha6.png" title="Nivelamento" />
           <Item img="/unha7.png" title="Resistência" />
         </Wrap>
-        <Botao onClick={() => window.scrollTo(0, 0)} 
-          animate={{ scale: 0.9 }}
-          transition={{
-            duration: 0.6,
-            repeat: Infinity,
-            repeatType:'reverse',
-            ease:"easeInOut",
-            // repeatDelay: 0.5,
-          }}
-          mt={50}
-          maxW={600}
-        >
-          <b>EU QUERO PARTICIPAR</b>
-        </Botao>
+        <a href="#FNAME">
+          <Botao
+            animate={{ scale: 0.9 }}
+            transition={{
+              duration: 0.6,
+              repeat: Infinity,
+              repeatType:'reverse',
+              ease:"easeInOut",
+              // repeatDelay: 0.5,
+            }}
+            mt={50}
+            maxW={600}
+          >
+            <b>EU QUERO PARTICIPAR</b>
+          </Botao>
+        </a>
       </Flex>
     </Flex>
   );

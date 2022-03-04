@@ -38,7 +38,7 @@ export const theme = extendTheme({
         },
       },
       body: {
-        bg: "url(/bg.jpg), #184259",
+        background: "url(/bg.jpg), #184259",
         bgSize: "cover",
         backgroundAttachment: { base: "fixed", md: "inherit" },
         color: "white",

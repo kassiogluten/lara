@@ -38,7 +38,7 @@ export function Hero() {
         w="full"
         justify="space-between"
         flexDir={{ base: "column", md: "row" }}
-        bgImage="/lara4.png"
+        bgImage="/lara.png"
         bgRepeat="no-repeat"
         bgSize={{ base: "150%", md: "100%", "2xl": "cover" }}
         overflow="hidden"
@@ -53,7 +53,7 @@ export function Hero() {
         />
         <VStack
           px={4}
-          pt="5vw"
+          pt={20}
           pb={100}
           flex={1}
           textAlign="center"
@@ -84,7 +84,7 @@ export function Hero() {
             21 a 24 de Março, ao vivo, online e gratuito.
           </Heading>
 
-          <form
+          <form id="form"
             action="https://app.mailingboss.com/lists/6203adf71c88e/subscribe"
             method="post"
             onSubmit={() => setLoading(true)}

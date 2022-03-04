@@ -77,9 +77,12 @@ export function Footer() {
             (patente requerida no INPI) que revolucionou o mercado de
             alongamentos de fibra.{" "}
           </Text>
-          <Botao onClick={() => window.scrollTo(0, 0)} mt={50} maxW={600}>
+          <a href="#FNAME">
+
+          <Botao mt={50} maxW={600}>
             <b>EU QUERO PARTICIPAR</b>
           </Botao>
+          </a>
         </VStack>
       </Flex>
 
