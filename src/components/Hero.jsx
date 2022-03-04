@@ -126,7 +126,8 @@ export function Hero() {
                   px={8}
                   children={<Icon as={FiUser} color="white" boxSize={30} />}
                 />
-                <Input required
+                <Input
+                  required
                   _hover={{ bg: "azul" }}
                   transitionProperty="none"
                   borderWidth={0}
@@ -142,31 +143,7 @@ export function Hero() {
                   id="FNAME"
                 />
               </InputGroup>
-              <InputGroup size="lg" borderRadius="full" overflow="hidden">
-                <InputLeftElement
-                  bg="verde"
-                  pointerEvents="none"
-                  px={8}
-                  children={
-                    <Icon as={FiSmartphone} color="white" boxSize={30} />
-                  }
-                />
-                <Input required
-                  _hover={{ bg: "azul" }}
-                  transitionProperty="none"
-                  borderWidth={0}
-                  pl={20}
-                  _focus={{ bg: "verde" }}
-                  _placeholder={{ color: "white" }}
-                  color="white"
-                  bgGradient="linear(to-r,verdeClaro, #53a5bc)"
-                  variant="filled"
-                  placeholder="Seu melhor telefone"
-                  name="PHONE"
-                  type="text"
-                  id="PHONE"
-                />
-              </InputGroup>
+
               <InputGroup size="lg" borderRadius="full" overflow="hidden">
                 <InputLeftElement
                   bg="verde"
@@ -176,7 +153,8 @@ export function Hero() {
                     <Icon as={FiPhoneCall} color="white" boxSize={30} />
                   }
                 />
-                <Input required
+                <Input
+                  required
                   _hover={{ bg: "azul" }}
                   transitionProperty="none"
                   borderWidth={0}
@@ -197,9 +175,37 @@ export function Hero() {
                   bg="verde"
                   pointerEvents="none"
                   px={8}
+                  children={
+                    <Icon as={FiSmartphone} color="white" boxSize={30} />
+                  }
+                />
+                <Input
+                  required
+                  _hover={{ bg: "azul" }}
+                  transitionProperty="none"
+                  borderWidth={0}
+                  pl={20}
+                  _focus={{ bg: "verde" }}
+                  _placeholder={{ color: "white" }}
+                  color="white"
+                  bgGradient="linear(to-r,verdeClaro, #53a5bc)"
+                  variant="filled"
+                  placeholder="Seu melhor telefone"
+                  name="PHONE"
+                  type="text"
+                  id="PHONE"
+                />
+              </InputGroup>
+
+              <InputGroup size="lg" borderRadius="full" overflow="hidden">
+                <InputLeftElement
+                  bg="verde"
+                  pointerEvents="none"
+                  px={8}
                   children={<EmailIcon color="white" boxSize={30} />}
                 />
-                <Input required
+                <Input
+                  required
                   _hover={{ bg: "azul" }}
                   transitionProperty="none"
                   borderWidth={0}
