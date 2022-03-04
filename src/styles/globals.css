@@ -1,11 +1,30 @@
 html,
 body {
-  scroll-behavior:smooth;
+  scroll-behavior: smooth;
   padding: 0;
   margin: 0;
-  background-image: url("/bg.jpg");
+  /* background-image: url("/bg.jpg"); */
 }
-
+@media (max-width: 700px) {
+  body:before {
+    content: "";
+    display: block;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+    background: url(/bg.jpg) no-repeat center center #f0f;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  body {
+    background-color: #f0f;
+  }
+}
 a {
   color: inherit;
   text-decoration: none;
