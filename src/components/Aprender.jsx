@@ -32,7 +32,7 @@ export function Aprender() {
       w="100%"
     >
       <Flex
-        py={20}
+        py={{xl:16}}
         textAlign="center"
         align="center"
         w="full"

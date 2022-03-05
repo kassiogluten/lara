@@ -37,10 +37,10 @@ export function Hero() {
         align="center"
         w="full"
         justify="space-between"
-        flexDir={{ base: "column", md: "row" }}
+        flexDir={{ base: "column", lg: "row" }}
         bgImage="/lara.png"
         bgRepeat="no-repeat"
-        bgSize={{ base: "170%", md: "100%", "2xl": "cover" }}
+        bgSize={{ base: "170%", lg: "100%", "2xl": "cover" }}
         overflow="hidden"
         //flexDir="column"
       >
@@ -49,11 +49,11 @@ export function Hero() {
           textAlign="center"
           align="center"
           justify="center"
-          minH={{ base: "90vw", md: "70vw" }}
+          minH={{ base: "90vw", lg: "70vw" }}
         />
         <VStack
           px={4}
-          pt={20}
+          pt={{base:"25vw", lg:0}}
           pb={100}
           flex={1}
           textAlign="center"

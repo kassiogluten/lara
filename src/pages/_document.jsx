@@ -73,7 +73,20 @@ fbq('track', 'PageView')`,
               gtag('config', 'UA-153282122-1');`,
             }}
           />
-
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `
+              (function(l,d,t,r,c,k){
+              if(!l.lt){l.lt=l.lt||{_c:[]};
+              c=d.getElementsByTagName('head')[0];
+              k=d.createElement('script');k.async=1;
+              k.src=t;c.appendChild(k);}
+              l.ltq = l.ltq || function(k,v){l.lt._c.push([k,v])};
+              
+              ltq('init', '4hy-4')
+              })(window,document,'//tag.ltrck.com.br/lt16464.js');`,
+            }}
+          />
 
         </body>
       </Html>
