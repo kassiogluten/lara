@@ -11,7 +11,6 @@ import {
   Center,
   Button,
   Wrap,
-  Image,
   InputGroup,
   InputLeftAddon,
   InputLeftElement,
@@ -23,6 +22,7 @@ import { EmailIcon, PhoneIcon } from "@chakra-ui/icons";
 
 import { FiSmartphone, FiStar, FiUser } from "react-icons/fi";
 import { Botao } from "./Hero";
+import Image from "next/image";
 
 export function Footer() {
   return (
@@ -41,10 +41,13 @@ export function Footer() {
         justify="center"
       >
         <Image
+          quality={90}
+          width={700}
+          height={995}
           objectFit="contain"
-          flex={{ md: 1 }}
-          w={{ lg: "40%" }}
-          maxW={{ md: 700 }}
+          // flex={{ md: 1 }}
+          // w={{ lg: "40%" }}
+          // maxW={{ md: 700 }}
           src="/lara-rodape.png"
           alt="Lara"
         />
@@ -78,10 +81,9 @@ export function Footer() {
             alongamentos de fibra.{" "}
           </Text>
           <Box alignSelf="center" as="a" href="#FNAME">
-
-          <Botao mt={50} maxW={600}>
-            <b>EU QUERO PARTICIPAR</b>
-          </Botao>
+            <Botao mt={50} maxW={600}>
+              <b>EU QUERO PARTICIPAR</b>
+            </Botao>
           </Box>
         </VStack>
       </Flex>

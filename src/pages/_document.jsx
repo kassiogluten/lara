@@ -20,12 +20,21 @@ export default class MyDocument extends Document {
             href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600;700;800;900&display=swap"
             rel="stylesheet"
           />
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+              new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+              j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+              'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+              })(window,document,'script','dataLayer','GTM-NJ4ZBZN');`,
+            }}
+          />
         </Head>
         <body>
           <ColorModeScript initialColorMode="dark" />
           <Main />
           <NextScript />
-          <script
+          {/* <script
             dangerouslySetInnerHTML={{
               __html: `!function(f,b,e,v,n,t,s)
 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -87,7 +96,16 @@ fbq('track', 'PageView')`,
               })(window,document,'//tag.ltrck.com.br/lt16464.js');`,
             }}
           />
+           */}
 
+          <noscript>
+            <iframe
+              src="https://www.googletagmanager.com/ns.html?id=GTM-NJ4ZBZN"
+              height="0"
+              width="0"
+              style={{ display: "none", visibility: "hidden" }}
+            ></iframe>
+          </noscript>
         </body>
       </Html>
     );
