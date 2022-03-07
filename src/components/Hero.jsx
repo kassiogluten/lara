@@ -144,7 +144,7 @@ export function Hero() {
                 />
               </InputGroup>
 
-              <InputGroup size="lg" borderRadius="full" overflow="hidden">
+              {/* <InputGroup size="lg" borderRadius="full" overflow="hidden">
                 <InputLeftElement
                   bg="verde"
                   pointerEvents="none"
@@ -195,7 +195,7 @@ export function Hero() {
                   type="text"
                   id="PHONE"
                 />
-              </InputGroup>
+              </InputGroup> */}
 
               <InputGroup size="lg" borderRadius="full" overflow="hidden">
                 <InputLeftElement
