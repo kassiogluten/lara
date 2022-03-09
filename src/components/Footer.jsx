@@ -105,7 +105,25 @@ export function Footer() {
         >
           Feito com ❤️ por Suricato Agência
         </Text> */}
-        <Text w="full">© Todos os Direitos Reservados</Text>
+        <Text w="full">
+          Todos os direitos reservados à Lara Machado Bonadiman Moreno LTDA,
+          2022.
+          <br />
+          <br />
+          Contatos:
+          <br />
+          Telefone: <a href="tel:(28) 3542-4549">(28) 3542-4549</a>
+          <br />
+          E-mail: <a href="mailto:lara-machado@hotmail.com">lara-machado@hotmail.com</a>
+          <br />
+          <br />
+          CNPJ: 21.821.783/0001-44
+          <br />
+          Razão Social: Lara Machado Bonadiman Moreno LTDA
+          <br />
+          <br />
+          <a href="https://cantinhodalara.com.br/politicas-de-privacidade">CLIQUE AQUI para acessar as Políticas de Privacidade</a>.
+        </Text>
       </Flex>
     </Flex>
   );
